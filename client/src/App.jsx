@@ -5,6 +5,7 @@ import FoodItem from "./pages/FoodItem";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import MyOrders from "./pages/MyOrders";
+import AdminOrderManagement from "./pages/AdminOrderManagement";
 
 export default function App() {
   return (
@@ -22,6 +23,9 @@ export default function App() {
           </Routes>
         </div>
       </div>
+      <Routes>
+        <Route path="/admin" element={<AdminOrderManagement />} />
+      </Routes>
     </BrowserRouter>
   );
 }
